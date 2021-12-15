@@ -11,7 +11,7 @@ Modify the `Dockerfile` according to your needs: choose base image, install pack
 The repo contains a sample `nginx.conf` to work with upstream PHP-FPM via fastCGI. You can modify the server settings. The file is mounted to `/etc/nginx/conf.d/default.conf` in the NGINX container.
 
 ### HTML
-The `html` folder contains the files that are served by NGINX / PHP.
+The `html` folder contains the files that are served by NGINX / PHP. It is mounted under `/var/www/html` in both containers.
 
 ### `docker compose`
 To start your server use the command:
